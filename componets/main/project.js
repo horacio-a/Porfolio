@@ -30,8 +30,8 @@ const Project = () => {
                 '/imagenes/space/django.jpg  ',
             ],
             linkGithub: 'https://github.com/horacio-a/Espacio-bonhomia',
-            linkWeb: 'proximamente',
-            textPresen: 'escribir',
+            linkWeb: 'http://horacio.pythonanywhere.com',
+            textPresen: 'Proyecto dessarrollado como proyecto final para el Curso de Coderhouse de Python y Django, ',
         },
         3: {
             name: 'Util Hub',
@@ -81,8 +81,8 @@ const Project = () => {
                 '/imagenes/space/ic-react.png',
                 '/imagenes/space/nodejs.png  ',
             ],
-            linkGithub: '',
-            linkWeb: '',
+            linkGithub: 'https://github.com/horacio-a/WeTrust.git',
+            linkWeb: 'https://wetrust.com.ar',
             textPresen: 'terminar',
         },
     }
