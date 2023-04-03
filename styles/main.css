@@ -16,6 +16,17 @@ body {
     src: url('../asset/GothamBook.ttf');
 }
 
+@font-face {
+    font-family: Cinzel-Regular;
+    src: url('../asset/Cinzel-Regular.otf');
+}
+
+@font-face {
+    font-family: Dreamscape;
+    src: url('../asset/Dreamscape.ttf');
+}
+
+
 
 @media (min-width: 0px) and (max-width: 950px) {
 
