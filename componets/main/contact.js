@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import emailjs from 'emailjs-com'
 import toast, { Toaster } from 'react-hot-toast';
+import { Waypoint } from "react-waypoint";
 
-
-const Contact = () => {
+const Contact = ({ setTitlePage, changebyscrotum }) => {
 
     const name = useRef()
     const email = useRef()
@@ -18,8 +18,10 @@ const Contact = () => {
     }
 
     const enviarEmail = () => {
-        const ToastLoading = toast.loading('Loading...');
+        toast.dismiss();
         const Enviar = comprobarFormulario()
+        const ToastLoading = toast.loading('Loading...');
+
         if (Enviar === true) {
             let templateParams = {
                 user_name: name.current.value,
@@ -35,11 +37,11 @@ const Contact = () => {
 
             ).then(function (response) {
                 toast.dismiss(ToastLoading);
-                toast.success('El mensaje fue enviado');
+                const ToastSuccess = toast.success('El mensaje fue enviado');
                 console.log(response.text);
             }, function (error) {
                 toast.dismiss(ToastLoading);
-                toast.error('Error');
+                const ToastError = toast.error('Error');
                 console.log(error.text);
             });
             name.current.value = ''
@@ -56,21 +58,24 @@ const Contact = () => {
 
     return (
         <>
+
             <div className="paginaConctacto" name='Contacto'>
 
                 <div className="conteinerMainContanto">
                     <div className="titleContacto">Háblame cuando quieras</div>
 
                     <div className="subtitleContacto">tu mensaje nunca molesta</div>
+                    <Waypoint
+                        onEnter={() => { changebyscrotum(3); setTitlePage('Contacto') }} />
                     <div className="conteinerInputContacto" >
                         <div className="rowContacto doble">
                             <div className="UnitInput">
                                 <label className="contacto">Tu nombre</label>
-                                <input type={'text'} className='inputContacto' placeholder="Ingresa tu nombre" ref={name}></input>
+                                <input type={'text'} className='inputContacto' placeholder="Ingresa tu nombre" ref={name}/>
                             </div>
                             <div className="UnitInput">
                                 <label className="contacto" >Tu Email</label>
-                                <input type={'text'} className='inputContacto' ref={email} placeholder="Ingresa tu Email"></input>
+                                <input type={'text'} className='inputContacto' ref={email} placeholder="Ingresa tu Email"/>
                             </div>
                         </div>
                         <div className="rowContacto">
@@ -85,11 +90,9 @@ const Contact = () => {
 
                     </div>
                 </div>
+
             </div>
-            <Toaster
-                toastOptions={{
-                    className: 'fontGotham'
-                }} />
+
         </>
     )
 }

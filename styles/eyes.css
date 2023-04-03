@@ -201,6 +201,7 @@
     }
 
     .conteiner-nombre {
+        font-family: Cinzel;
         width: 85%;
         height: 25%;
         display: flex;
@@ -645,12 +646,14 @@
     }
 
     .contacto-movil p {
+        font-family: Cinzel;
         text-align: center;
         color: #1B1717;
         font-size: 5.5vw;
     }
 
     .titulo-contacto {
+        font-family: Cinzel;
         color: #85bb65;
         font-size: 7.5vw;
         text-align: center;
@@ -665,14 +668,36 @@
     }
 
     .boton-movil-contacto {
+        font-family: Cinzel;
+
         border: none;
         width: 45%;
         height: 5vh;
+        border: solid 2px #1B1717;
+        color: #EEEBDD;
+        border-radius: 1vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #1B1717;
+    }
+
+    .boton-movil-contacto:hover {
+        border: none;
+        width: 45%;
+        height: 5vh;
+        border: solid 2px #1B1717;
         background-color: #1B1717;
         color: #EEEBDD;
         border-radius: 1vh;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #e4e4e4;
     }
+
 
     .conteiner-movil-boton {
         width: 100%;
@@ -1132,7 +1157,7 @@
 
     .text-presentacion {
         font-family: cinzel;
-        font-size: 1.125vw;
+        font-size: 1.05vw;
         text-align: center;
         margin: 0.5vw;
 
@@ -1180,7 +1205,10 @@
         margin-top: .5vw;
         border-radius: 1vw;
         margin-bottom: 1.5vw;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .titulo-tecnologia {
@@ -1412,6 +1440,8 @@
     }
 
     .titulo-contacto {
+        font-family: Cinzel;
+
         font-size: 2.3vw;
         margin: 1vw;
         margin-bottom: 0%;
@@ -1480,15 +1510,20 @@
     }
 
     .contactoBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         border-radius: 1vh;
         color: #EEEBDD;
         width: 35%;
         height: 7.5%;
+        border: solid 2px #1B1717;
         background-color: #1B1717;
     }
 
     .contactoBtn:hover {
+        border: solid 2px #1B1717;
         cursor: pointer;
         border-radius: 1vh;
         color: #1B1717;

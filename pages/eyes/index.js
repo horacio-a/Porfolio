@@ -1,11 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import Header from '../../componets/header';
+import Head from "next/head";
 const EyesPage = () => {
 
 
     return (
         <>
+            <Head>
+                <link rel="icon" href={'/imagenes/eyes/mascotaon.png'} />
+                <meta name="description" content="Porfolio de horacio Albornoz" />
+                <title>Horacio albornoz</title>
+            </Head>
             <div className="conteiner-main" >
                 <Header />
                 <main>

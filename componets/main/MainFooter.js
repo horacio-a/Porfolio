@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { Waypoint } from "react-waypoint";
 
 
-
-const MainFooter = ({ ScrolltoProyect,Scrolltohabilidades, ScrolltoContacto}) => {
+const MainFooter = ({ ScrolltoProyect, Scrolltohabilidades, ScrolltoContacto, setTitlePage, changebyscrotum }) => {
     return (
         <>
             <div className="paginaFooter" name='Footer'>
@@ -12,6 +12,8 @@ const MainFooter = ({ ScrolltoProyect,Scrolltohabilidades, ScrolltoContacto}) =>
                     <div className="infoFooter">
                         <div className="conctRapido">
                             <div className="titleContact">Contacto rápido</div>
+                            <Waypoint
+                                onEnter={() => { changebyscrotum(4); setTitlePage('Horacio Albornoz') }} />
                             <div className="dataContact">Horaciomatiasalbornoz@gmail.com</div>
                             <div className="dataContact">Horacio albornoz#0900 (discord)</div>
                         </div>
@@ -27,7 +29,7 @@ const MainFooter = ({ ScrolltoProyect,Scrolltohabilidades, ScrolltoContacto}) =>
                 </div>
             </div>
 
-            </>
+        </>
     )
 }
 

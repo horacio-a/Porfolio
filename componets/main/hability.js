@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { Waypoint } from "react-waypoint";
 
 
-
-const Hability = () => {
+const Hability = ({ setTitlePage, changebyscrotum }) => {
     return (
         <>
             <div className="paginaHabilidades" name='habilidades'>
@@ -26,7 +26,8 @@ const Hability = () => {
                         <div>
                             Por otro lado, en Node.js, he desarrollado aplicaciones de backend y de servidor, utilizando frameworks como Express y Nest.js para construir APIs y servicios web robustos y escalables.
                         </div>
-
+                        <Waypoint
+                            onEnter={() => { changebyscrotum(2); setTitlePage('Mis Habilidades') }} />
                         <div>
                             En general, tengo habilidades en el desarrollo de aplicaciones con diferentes tecnologías, pero también tengo una comprensión sólida de los conceptos de programación y la resolución de problemas, lo que me permite adaptarme y aprender nuevas tecnologías y herramientas rápidamente.
                         </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { scroller } from "react-scroll";
 import HeaderMain from "../componets/headermain";
 import { Waypoint } from 'react-waypoint';
@@ -8,6 +8,7 @@ import Project from "@/componets/main/project";
 import Hability from "@/componets/main/hability";
 import Contact from "@/componets/main/contact";
 import MainFooter from "@/componets/main/MainFooter";
+import { Toaster } from "react-hot-toast";
 
 
 const Index = () => {
@@ -15,7 +16,9 @@ const Index = () => {
     const [TitlePage, setTitlePage] = useState('Horacio Albornoz')
     const [scrollItem, setScrollItem] = useState(0)
 
-
+    useEffect(() => {
+        ScrolltoInicio()
+    }, [])
 
     const changebyscrotum = (data) => {
         setScrollItem(data)
@@ -82,24 +85,25 @@ const Index = () => {
                 setScrollItem={setScrollItem} ScrolltoProyect={ScrolltoProyect} />
             <Hero />
 
-            <Waypoint
-                onEnter={() => { changebyscrotum(1); setTitlePage('Mis Proyectos') }} />
 
-            <Project />
+            <Project changebyscrotum={changebyscrotum} setTitlePage={setTitlePage} />
 
-            <Waypoint
-                onEnter={() => { changebyscrotum(2); setTitlePage('Mis Habilidades') }} />
 
-            <Hability />
-            <Waypoint
-                onEnter={() => { changebyscrotum(3); setTitlePage('Contacto') }} />
-            <Contact />
-            <Waypoint
-                onEnter={() => { changebyscrotum(4); setTitlePage('Horacio Albornoz') }} />
 
-            <MainFooter ScrolltoProyect={ScrolltoProyect} Scrolltohabilidades={Scrolltohabilidades} 
-            ScrolltoContacto={ScrolltoContacto}  />
+            <Hability changebyscrotum={changebyscrotum} setTitlePage={setTitlePage} />
 
+
+
+
+            <Contact changebyscrotum={changebyscrotum} setTitlePage={setTitlePage} />
+
+
+            <MainFooter ScrolltoProyect={ScrolltoProyect} Scrolltohabilidades={Scrolltohabilidades}
+                ScrolltoContacto={ScrolltoContacto} changebyscrotum={changebyscrotum} setTitlePage={setTitlePage} />
+            <Toaster
+                toastOptions={{
+                    className: 'fontGotham'
+                }} />
 
         </div>
 

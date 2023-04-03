@@ -1,7 +1,110 @@
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Header from '../../componets/header';
+import toast, { Toaster } from 'react-hot-toast';
+import emailjs from 'emailjs-com'
+
+
 const EyesPageContacto = () => {
+    const form = useRef('')
+    const formMovil = useRef('')
+
+
+    const comprobarEstado = () => {
+        if (form.current.user_name.value !== '' && form.current.subject.value !== '' && form.current.user_email.value !== '' && form.current.message.value !== '') {
+            return true
+        } else {
+            return false
+
+        }
+    }
+
+    const comprobarEstadoMovil = () => {
+        if (formMovil.current.user_name.value !== '' && formMovil.current.subject.value !== '' && formMovil.current.user_email.value !== '' && formMovil.current.message.value !== '') {
+            return true
+        } else {
+            return false
+
+        }
+    }
+
+
+    const SubmitContacto = async () => {
+        toast.dismiss();
+
+        const ToastLoading = toast.loading('Loading...');
+
+
+        const Enviar = comprobarEstado()
+
+        if (Enviar === true) {
+
+            emailjs.sendForm(
+                process.env.NEXT_PUBLIC_APP_SERVICE,
+                process.env.NEXT_PUBLIC_APP_TEMPLATE,
+                form.current,
+                process.env.NEXT_PUBLIC_APP_APIPUBLIC
+
+            ).then((result) => {
+                toast.dismiss(ToastLoading);
+                toast.success('El mensaje fue enviado');
+                console.log(result.text);
+            }, (error) => {
+                toast.dismiss(ToastLoading);
+                toast.error('Error');
+                console.log(error.text);
+            });
+
+            form.current.user_name.value = ''
+            form.current.subject.value = ''
+            form.current.user_email.value = ''
+            form.current.message.value = ''
+        } else {
+            toast.dismiss(ToastLoading);
+            toast.error('Complete todos los campos');
+            console.log('no enviar')
+        }
+
+
+    }
+
+    const SubmitContactoMovil = async () => {
+        toast.dismiss();
+
+        const ToastLoading = toast.loading('Loading...');
+
+
+        const Enviar = comprobarEstadoMovil()
+
+        if (Enviar === true) {
+
+            emailjs.sendForm(
+                process.env.NEXT_PUBLIC_APP_SERVICE,
+                process.env.NEXT_PUBLIC_APP_TEMPLATE,
+                formMovil.current,
+                process.env.NEXT_PUBLIC_APP_APIPUBLIC
+            ).then((result) => {
+                toast.dismiss(ToastLoading);
+                toast.success('El mensaje fue enviado');
+                console.log(result.text);
+            }, (error) => {
+                toast.dismiss(ToastLoading);
+                toast.error('Error');
+                console.log(error.text);
+            });
+
+            formMovil.current.user_name.value = ''
+            formMovil.current.subject.value = ''
+            formMovil.current.user_email.value = ''
+            formMovil.current.message.value = ''
+        } else {
+            toast.dismiss(ToastLoading);
+            toast.error('Complete todos los campos');
+            console.log('no enviar')
+        }
+
+
+    }
 
     return (
         <>
@@ -46,7 +149,7 @@ const EyesPageContacto = () => {
                             </div>
                         </div>
                         <div className="conteiner-ojocontac">
-                            <img src="/imagenes/eyes/mascotaon.png" alt="" style={{width:'100%'}} />
+                            <img src="/imagenes/eyes/mascotaon.png" alt="" style={{ width: '100%' }} />
                         </div>
                         <div className="conteiner-formulario">
                             <div className="container ">
@@ -54,12 +157,12 @@ const EyesPageContacto = () => {
                                     Dejame un mensaje
                                 </div>
 
-                                <form action="/eyes/contacto/" className="eyes" method="POST">
-                                    <input type="email" placeholder="Email" className="form-pc" name="email" />
-                                    <input type="text" placeholder="Nombre" className="form-pc" name="name" />
+                                <form className="eyes" ref={form}>
+                                    <input type="email" placeholder="Email" className="form-pc" name="user_email" />
+                                    <input type="text" placeholder="Nombre" className="form-pc" name="user_name" />
                                     <input type="text" placeholder="Asunto" className="form-pc" name="subject" />
                                     <textarea placeholder="Mensaje" className="form-pc" name="message"></textarea>
-                                    <input type="submit" className="contactoBtn"></input>
+                                    <div onClick={() => { SubmitContacto() }} className="contactoBtn">Enviar</div>
                                 </form>
 
 
@@ -73,18 +176,18 @@ const EyesPageContacto = () => {
                     <div className='form-enviar'>
                         <div className="titulo-contacto">Enviar un Mensaje</div>
                         <div className="container">
-                            <form action="/eyes/contacto/"className="eyes" method="POST">
-                                <input type="email" placeholder="Email" className="form-movil" name="email" />
-                                <input type="text" placeholder="Nombre" className="form-movil" name="name" />
+                            <form className="eyes" ref={formMovil}>
+                                <input type="email" placeholder="Email" className="form-movil" name="user_email" />
+                                <input type="text" placeholder="Nombre" className="form-movil" name="user_name" />
                                 <input type="text" placeholder="Asunto" className="form-movil" name="subject" />
                                 <textarea placeholder="Mensaje" className="texto-form-movil" name="message"></textarea>
-                                <input type="submit" className="boton-movil-contacto"></input>
+                                <div onClick={() => { SubmitContactoMovil() }} className="boton-movil-contacto">Enviar</div>
 
                             </form>
 
 
                         </div>
-                    </div>  
+                    </div>
                     <div className="contacto-movil">
                         <div className="titulo-contacto">Contacto Rapido</div>
                         <p>Telefono: 299 570-7123 </p>
@@ -94,7 +197,7 @@ const EyesPageContacto = () => {
                     </div>
                 </main>
 
-
+            <Toaster/>
             </div>
         </>
 

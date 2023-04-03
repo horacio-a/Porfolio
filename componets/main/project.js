@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { Waypoint } from "react-waypoint";
 
 
 
-
-const Project = () => {
+const Project = ({setTitlePage, changebyscrotum}) => {
     const [itemProject, setItemProject] = useState(1)
     const dataProject = {
         1: {
@@ -31,7 +31,7 @@ const Project = () => {
             ],
             linkGithub: 'https://github.com/horacio-a/Espacio-bonhomia',
             linkWeb: 'http://horacio.pythonanywhere.com',
-            textPresen: 'Proyecto dessarrollado como proyecto final para el Curso de Coderhouse de Python y Django, ',
+            textPresen: 'Proyecto dessarrollado como proyecto final para el Curso de Coderhouse de Python y Django, Con un Frontend y Backend desarrolado en django es una aplicacion que simula un ecommerce. ',
         },
         3: {
             name: 'Util Hub',
@@ -44,7 +44,7 @@ const Project = () => {
             ],
             linkGithub: 'https://github.com/horacio-a/calculadora-extencion',
             linkWeb: '"https://chrome.google.com/webstore/detail/calculadora/bejdbiknjfcgcllbcfgamogcefnojoak?hl=es&authuser=0',
-            textPresen: 'escribir',
+            textPresen: 'Es una Extencion de goggle ',
         },
         4: {
             name: 'Chat Priv',
@@ -121,6 +121,8 @@ const Project = () => {
                                 <img alt=' ' src="/imagenes/main/backFlecha.png" onClick={() => { changeProject('prev') }} ></img>
                             </div>
                         </div>
+                        <Waypoint
+                            onEnter={() => { changebyscrotum(1); setTitlePage('Mis Proyectos') }} />
 
                         <div className="conteinerData">
                             <div className="titleConteiner">{`${dataProject[itemProject].name}`}</div>
