@@ -162,6 +162,7 @@ const EyesPageProyectos = () => {
             <link rel="icon" href={'/imagenes/eyes/mascotaon.png'} />
             <meta name="description" content="Porfolio de horacio Albornoz" />
             <title>Mis Proyectos</title>
+
         </Head>
             <div className="conteiner-main" >
                 <Header />

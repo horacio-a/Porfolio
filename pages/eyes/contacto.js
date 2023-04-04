@@ -3,7 +3,7 @@ import Link from "next/link";
 import Header from '../../componets/header';
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from 'emailjs-com'
-
+import Head from "next/head";
 
 const EyesPageContacto = () => {
     const form = useRef('')
@@ -108,6 +108,12 @@ const EyesPageContacto = () => {
 
     return (
         <>
+            <Head>
+                <link rel="icon" href={'/imagenes/eyes/mascotaon.png'} />
+                <meta name="description" content="Porfolio de horacio Albornoz" />
+                <title>Contacto</title>
+
+            </Head>
             <div className="conteiner-main" >
                 <Header />
                 <div id="main-contacto-pc">
@@ -197,7 +203,7 @@ const EyesPageContacto = () => {
                     </div>
                 </main>
 
-            <Toaster/>
+                <Toaster />
             </div>
         </>
 

@@ -11,6 +11,7 @@ const EyesPage = () => {
                 <link rel="icon" href={'/imagenes/eyes/mascotaon.png'} />
                 <meta name="description" content="Porfolio de horacio Albornoz" />
                 <title>Horacio albornoz</title>
+
             </Head>
             <div className="conteiner-main" >
                 <Header />
@@ -23,7 +24,7 @@ const EyesPage = () => {
                             Albornoz
                         </p>
                         <p className="caption">
-                            desarrollador full stack
+                            desarrollador full stack.
                         </p>
                     </div>
                     <div id="conteiner-logogrande">

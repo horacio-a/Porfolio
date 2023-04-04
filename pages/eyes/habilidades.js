@@ -10,6 +10,7 @@ const EyesPageHabilidades = () => {
                 <link rel="icon" href={'/imagenes/eyes/mascotaon.png'} />
                 <meta name="description" content="Porfolio de horacio Albornoz" />
                 <title>Mis habilidades</title>
+
             </Head>
             <div className="conteiner-main" >
                 <Header />

@@ -9,6 +9,7 @@ const EyesPageQuiensoy = () => {
                 <link rel="icon" href={'/imagenes/eyes/mascotaon.png'} />
                 <meta name="description" content="Porfolio de horacio Albornoz" />
                 <title>Quien soy</title>
+
             </Head>
             <div className="conteiner-main" >
                 <Header />
