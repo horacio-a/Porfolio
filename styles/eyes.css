@@ -10,8 +10,8 @@
         color: #85bb65;
     }
 
-    .titlemovilProyecto{
-         font-size: 1.5vh ; 
+    .titlemovilProyecto {
+        font-size: 1.5vh;
     }
 
 
@@ -504,7 +504,8 @@
         align-items: center;
         justify-content: center;
     }
-    .boton-proyectos.desactive{
+
+    .boton-proyectos.desactive {
         display: none;
     }
 
@@ -536,13 +537,14 @@
         margin-top: 0.5vw;
 
     }
+
     .estructurabotones.desactive {
         display: none;
 
 
     }
 
-    
+
     .miniboton-proyectos.active {
         font-size: 1.25vh;
         width: 37.5%;
@@ -562,6 +564,7 @@
         display: none;
 
     }
+
     .estructurabotones .miniboton-proyectos {
         width: 47.5%;
         height: 100%;
@@ -596,11 +599,11 @@
         background-color: #EEEBDD;
     }
 
-    .titulo-habilidades {
-        width: 100%;
-        height: 15%;
-        font-size: 3.5vh;
+    .titulo-tecnologia {
         color: #85bb65;
+        font-family: Cinzel;
+        margin-bottom: 1vw;
+        font-size: 5.5vw;
         text-align: center;
     }
 
@@ -618,7 +621,46 @@
         margin-top: 5%;
         margin-bottom: 5%;
     }
-
+    .bloque-tecnologia{
+        width: 85%;
+        height: 90%;
+        background-color: #e4e4e4;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .center-flex-j{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloque-tecnologia-unidad {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+    }
+    .space-around-flex-j{
+        width: 100%;
+        height: 40%;
+    }
+    .centerProyect{
+        width: 100%;
+        height: 80%;
+    }
+    .conteiner-misproyectos{
+        width: 100%;
+        height: 100%;
+    }
+    .bloque-tecnologia-unidad img {
+        height: 75%;
+        width: auto;
+    }
     /* -----------------------------------  fin main-habilidades -------------------------------------------- */
 
     /* -----------------------------------   main-contacto-------------------------------------------- */
@@ -843,6 +885,7 @@
         align-items: flex-start;
         justify-content: center;
     }
+
     .conteiner-quiensoy.desactive {
         width: 12.5%;
         height: 100%;
@@ -863,6 +906,7 @@
         align-items: flex-start;
         justify-content: center;
     }
+
     .conteiner-proyectos.desactive {
         width: 12.5%;
         height: 100%;
@@ -898,6 +942,7 @@
         margin: 0 20px;
         border-radius: 50%;
     }
+
     .box .eye.active::before {
         content: '';
         position: absolute;
@@ -913,6 +958,7 @@
     .box .eye.desactive {
         display: none;
     }
+
     .box .eye.desactive::before {
         display: none;
     }
@@ -974,6 +1020,7 @@
         align-items: flex-end;
         justify-content: center;
     }
+
     .conteiner-contacto-eye.desactive {
         width: 12.5%;
         height: 100%;
@@ -1415,7 +1462,7 @@
         display: none;
     }
 
-    .centerProyect{
+    .centerProyect {
         height: 85%;
         display: flex;
         justify-content: center;
@@ -1424,7 +1471,7 @@
 
     }
 
-    .centerContact{
+    .centerContact {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -1542,7 +1589,7 @@
         align-items: center;
         height: 100%;
     }
-     
+
 
 
 }
