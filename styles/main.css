@@ -416,7 +416,7 @@ body {
     .conteinerImgProject {
         position: relative;
         width: 95vw;
-        height: 68vh;
+        height: 60vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -425,9 +425,11 @@ body {
     .conteinerImgProject .backProyect {
         width: 100%;
         height: 100%;
+        display: none;
 
 
     }
+
 
     .conteinerImgProject .ConteinerAbsoluto {
         position: absolute;
@@ -438,13 +440,15 @@ body {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
+        background-color: #5639BF;
+        border-radius: 20px;
     }
 
     .conteinerImgProject .ConteinerAbsoluto .conteinerData {
         width: 85%;
-        height: 60%;
+        height: 75%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
