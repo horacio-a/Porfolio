@@ -39,17 +39,9 @@ const SpacePageQuiensoy = () => {
                     <div className="quiensoy-titulo-movil">Como Soy</div>
                     <div className="conteiner-quiensoy-space">
                         <div className="quiensoy-titulo">Como Soy</div>
-                        <p>Soy Horacio Albornoz un programador, altamente proactivo con ganas de aprender cosas nuevas, siempre 100%
-                            respetuoso, con buenas habilidades interpersonales y con bastante capacidad de manejar la frustración.
-                        </p>
-                        <p>
-                            Si me pidieran describirme como programador diría que soy alguien con capacidades lógicas muy
-                            entrenadas, con entendimiento de tecnologías como, HTML, CSS, JavaScript, React.js, Node.js, Python y
-                            Django, entre otras.
-
-                        </p>
-                        <p>También tengo experiencias usando aplicaciones como Figma, Excel, Word y power bi. Además de esto tengo
-                            conocimientos de contabilidad.</p>
+                        <p >Hola, soy un programador con amplio conocimiento en diversas tecnologías, entre ellas React, Node.js, JavaScript, Python y Django. Me apasiona el desarrollo de software y tengo experiencia en el diseño, la implementación y el mantenimiento de aplicaciones web y móviles.    </p>
+                        <p >En general, tengo habilidades en el desarrollo de aplicaciones con diferentes tecnologías, pero también tengo una comprensión sólida de los conceptos de programación y la resolución de problemas, lo que me permite adaptarme y aprender nuevas tecnologías y herramientas rápidamente. </p>
+                        <p >Estoy emocionado de trabajar en proyectos desafiantes y colaborar con otros desarrolladores para crear soluciones innovadoras y de alta calidad. ¡No dudes en contactarme si necesitas un programador con experiencia en estas tecnología </p>
                     </div>
                     <svg id="reflector_quiensoy" width="223" height="215" viewBox="0 0 223 215" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
