@@ -90,13 +90,13 @@ const Project = ({ setTitlePage, changebyscrotum }) => {
             icon: '/imagenes/main/mindfulmindLogo.png',
             imgQty: '5',
             imgs: [
-                '/imagenes/eyes/js.png       ',
                 '/imagenes/space/ic-react.png',
+                '/imagenes/main/nextjs.png',
                 '/imagenes/space/nodejs.png  ',
             ],
-            linkGithub: 'https://github.com/horacio-a/WeTrust.git',
-            linkWeb: 'https://wetrust.com.ar',
-            textPresen: 'WeTrust es mi proyecto web más complejo hasta el momento, es un e-commerce simulado donde el frontend está desarrollado con React.js, haciendo manejo de sesiones, estado de un carrito, manejo de stock, entre otras muchas cosas. El backend está desarrollado con node.js y con MySQL como base de datos, tiene integraciones con la API de mercado pago y posibilidad de hacer análisis del crecimiento de las ventas a través de gráficos proporcionados por Chart.js'
+            linkGithub: 'https://github.com/horacio-a/MindfulMind',
+            linkWeb: 'https://mindfulmind.com.ar',
+            textPresen: 'MindfulMind es una aplicación enfocada en productividad, creada en React Native con Expo, con backend en node.js, el proyecto tiene una landing page desarrollada en Next.js, todo desarrollado enteramente por mí.'
         }
     }
 

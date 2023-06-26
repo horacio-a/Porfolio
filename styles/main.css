@@ -22,6 +22,30 @@ body {
 }
 
 
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-clip: content-box;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a49cbf;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #e67200;
+}
+
+body::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-track {
+    background-color: #d7be75;
+}
+
+
+
 
 @media (min-width: 0px) and (max-width: 950px) {
 
@@ -1755,6 +1779,9 @@ body {
         background-color: #5639BF;
     }
 
+
+
+    
     .fontGotham {
         font-family: Gotham;
     }
