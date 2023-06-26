@@ -4,10 +4,10 @@ import { Waypoint } from "react-waypoint";
 
 
 
-const Project = ({setTitlePage, changebyscrotum}) => {
+const Project = ({ setTitlePage, changebyscrotum }) => {
     const [itemProject, setItemProject] = useState(1)
     const dataProject = {
-        1: {
+        6: {
             name: 'CRIPTOWORD',
             icon: '/imagenes/eyes/icon S.png',
             imgQty: '5',
@@ -20,7 +20,7 @@ const Project = ({setTitlePage, changebyscrotum}) => {
             linkWeb: 'https://criptoword.com.ar',
             textPresen: 'Proyecto desarrollado como proyecto final para la UTN. Es un proyecto codeado 100% por mi desde cero, tanto el frontend, que se desarrollo con React.js como framework y con Bootstrap como ayuda para la estetica, como el backend que esta realizado con node.js y MYSQL. Proyecto desarrollado como proyecto final para la UTN. Es un proyecto codeado 100% por mi desde cero, tanto el frontend, que se desarrollo con React.js como framework y con Bootstrap como ayuda para la estetica, como el backend que esta realizado con node.js y MYSQL.',
         },
-        2: {
+        7: {
             name: 'Espacio bonhomia',
             icon: '/imagenes/space/BonhomiaLogo.png',
             imgQty: '5',
@@ -33,7 +33,7 @@ const Project = ({setTitlePage, changebyscrotum}) => {
             linkWeb: 'http://horacio.pythonanywhere.com',
             textPresen: 'Proyecto dessarrollado como proyecto final para el Curso de Coderhouse de Python y Django, Con un Frontend y Backend desarrolado en django es una aplicacion que simula un ecommerce. ',
         },
-        3: {
+        5: {
             name: 'Util Hub',
             icon: '/imagenes/space/512.png',
             imgQty: '5',
@@ -44,7 +44,7 @@ const Project = ({setTitlePage, changebyscrotum}) => {
             ],
             linkGithub: 'https://github.com/horacio-a/calculadora-extencion',
             linkWeb: '"https://chrome.google.com/webstore/detail/calculadora/bejdbiknjfcgcllbcfgamogcefnojoak?hl=es&authuser=0',
-            textPresen: 'Es una Extencion de goggle ',
+            textPresen: 'Util hub es una extensión de Google multifuncional que simplifica tus tareas diarias. Realiza cálculos matemáticos rápidos, controla el tiempo con un cronómetro preciso y descubre una variedad de herramientas útiles, desarollada con Javascript Vanila y publicada usando el developer dashboard de Google ',
         },
         4: {
             name: 'Chat Priv',
@@ -57,9 +57,9 @@ const Project = ({setTitlePage, changebyscrotum}) => {
             ],
             linkGithub: 'https://github.com/horacio-a/Chat-en-tiempo-real',
             linkWeb: 'https://chatpriv.com.ar',
-            textPresen: '',
+            textPresen: 'Chat Priv es una página web donde quien ingrese tiene acceso a un chat en tiempo real, donde no se guarda ninguno de sus mensajes y puede comunicarse con otras personas, Está desarrollada en Node.js con Socket.io como librería principal encargada de enviar los mensajes.',
         },
-        5: {
+        3: {
             name: 'NextChange',
             icon: '/imagenes/eyes/nextchange.png',
             imgQty: '5',
@@ -70,9 +70,9 @@ const Project = ({setTitlePage, changebyscrotum}) => {
             ],
             linkGithub: 'https://github.com/horacio-a/Next-Change-Front',
             linkWeb: 'https://next-change.com.ar',
-            textPresen: '',
+            textPresen: 'NextChange es un web de conversión de unidades, tiene la posibilidad de hacer la conversión en +150 monedas, tiene un frotend desarrollado en React.js y un Backend creado en Node.js, para los valores de las monedas utiliza currencyapi como API',
         },
-        6: {
+        2: {
             name: 'WeTrust',
             icon: '/imagenes/main/logosWetrust.png',
             imgQty: '5',
@@ -83,9 +83,23 @@ const Project = ({setTitlePage, changebyscrotum}) => {
             ],
             linkGithub: 'https://github.com/horacio-a/WeTrust.git',
             linkWeb: 'https://wetrust.com.ar',
-            textPresen: 'terminar',
+            textPresen: 'WeTrust es mi proyecto web más complejo hasta el momento, es un e-commerce simulado donde el frontend está desarrollado con React.js, haciendo manejo de sesiones, estado de un carrito, manejo de stock, entre otras muchas cosas. El backend está desarrollado con node.js y con MySQL como base de datos, tiene integraciones con la API de mercado pago y posibilidad de hacer análisis del crecimiento de las ventas a través de gráficos proporcionados por Chart.js'
         },
+        1: {
+            name: 'MindfulMind',
+            icon: '/imagenes/main/mindfulmindLogo.png',
+            imgQty: '5',
+            imgs: [
+                '/imagenes/eyes/js.png       ',
+                '/imagenes/space/ic-react.png',
+                '/imagenes/space/nodejs.png  ',
+            ],
+            linkGithub: 'https://github.com/horacio-a/WeTrust.git',
+            linkWeb: 'https://wetrust.com.ar',
+            textPresen: 'WeTrust es mi proyecto web más complejo hasta el momento, es un e-commerce simulado donde el frontend está desarrollado con React.js, haciendo manejo de sesiones, estado de un carrito, manejo de stock, entre otras muchas cosas. El backend está desarrollado con node.js y con MySQL como base de datos, tiene integraciones con la API de mercado pago y posibilidad de hacer análisis del crecimiento de las ventas a través de gráficos proporcionados por Chart.js'
+        }
     }
+
     const changeProject = (data) => {
         const limit = Object.keys(dataProject).length
 
