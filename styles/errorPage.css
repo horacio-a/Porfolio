@@ -1,0 +1,30 @@
+.errorPage {
+    width: 100%;
+    height: 100vh;
+    background-color: #D8D4E4;
+    display: flex;
+    flex-direction: column;
+}
+
+.errorPage .conteinerTxt {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorPage .bntBack {
+    width: 12.5%;
+    height: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #5639BF;
+    font-family: Gentle;
+    color: #D8D4E4;
+    margin-top: 1%;
+}
