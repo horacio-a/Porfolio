@@ -23,9 +23,9 @@ export default function Custom404() {
                 <div className="conteinerTxt">
                     <div className="BigTitle">EEHH...</div>
                     <div className="SmallTitle">Creo que no tendrías que estar aquí</div>
-                    <a href="/" className="bntBack">
+                    <Link href={'/'} className="bntBack">
                         Volver
-                    </a>
+                    </Link>
                 </div>
 
             </main>
