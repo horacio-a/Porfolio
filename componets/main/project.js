@@ -18,7 +18,8 @@ const Project = ({ setTitlePage, changebyscrotum }) => {
             ],
             linkGithub: 'https://github.com/horacio-a/Criptoword-front',
             linkWeb: 'https://criptoword.com.ar',
-            textPresen: 'Proyecto desarrollado como proyecto final para la UTN. Es un proyecto codeado 100% por mi desde cero, tanto el frontend, que se desarrollo con React.js como framework y con Bootstrap como ayuda para la estetica, como el backend que esta realizado con node.js y MYSQL. Proyecto desarrollado como proyecto final para la UTN. Es un proyecto codeado 100% por mi desde cero, tanto el frontend, que se desarrollo con React.js como framework y con Bootstrap como ayuda para la estetica, como el backend que esta realizado con node.js y MYSQL.',
+            textPresen: `Proyecto desarrollado como proyecto final para la UTN. Es un proyecto codeado 100% por mi desde cero, tanto el frontend, que se desarrollo con React.js como framework y con Bootstrap como ayuda para la estetica, como el backend que esta realizado con node.js y MYSQL. Proyecto desarrollado como proyecto final para la UTN.
+            Es un proyecto codeado 100% por mi desde cero, tanto el frontend, que se desarrollo con React.js como framework y con Bootstrap como ayuda para la estetica, como el backend que esta realizado con node.js y MYSQL.`,
         },
         7: {
             name: 'Espacio bonhomia',
@@ -44,7 +45,8 @@ const Project = ({ setTitlePage, changebyscrotum }) => {
             ],
             linkGithub: 'https://github.com/horacio-a/calculadora-extencion',
             linkWeb: '"https://chrome.google.com/webstore/detail/calculadora/bejdbiknjfcgcllbcfgamogcefnojoak?hl=es&authuser=0',
-            textPresen: 'Util hub es una extensión de Google multifuncional que simplifica tus tareas diarias. Realiza cálculos matemáticos rápidos, controla el tiempo con un cronómetro preciso y descubre una variedad de herramientas útiles, desarollada con Javascript Vanila y publicada usando el developer dashboard de Google ',
+            textPresen: `Util hub es una extensión de Google multifuncional que simplifica tus tareas diarias.
+            Realiza cálculos matemáticos rápidos, controla el tiempo con un cronómetro preciso y descubre una variedad de herramientas útiles, desarollada con Javascript Vanila y publicada usando el developer dashboard de Google `,
         },
         4: {
             name: 'Chat Priv',
@@ -57,7 +59,8 @@ const Project = ({ setTitlePage, changebyscrotum }) => {
             ],
             linkGithub: 'https://github.com/horacio-a/Chat-en-tiempo-real',
             linkWeb: 'https://chatpriv.com.ar',
-            textPresen: 'Chat Priv es una página web donde quien ingrese tiene acceso a un chat en tiempo real, donde no se guarda ninguno de sus mensajes y puede comunicarse con otras personas, Está desarrollada en Node.js con Socket.io como librería principal encargada de enviar los mensajes.',
+            textPresen: `Chat Priv es una página web donde quien ingrese tiene acceso a un chat en tiempo real,
+            donde no se guarda ninguno de sus mensajes y puede comunicarse con otras personas, Está desarrollada en Node.js con Socket.io como librería principal encargada de enviar los mensajes.`,
         },
         3: {
             name: 'NextChange',
@@ -83,7 +86,8 @@ const Project = ({ setTitlePage, changebyscrotum }) => {
             ],
             linkGithub: 'https://github.com/horacio-a/WeTrust.git',
             linkWeb: 'https://wetrust.com.ar',
-            textPresen: 'WeTrust es mi proyecto web más complejo hasta el momento, es un e-commerce simulado donde el frontend está desarrollado con React.js, haciendo manejo de sesiones, estado de un carrito, manejo de stock, entre otras muchas cosas. El backend está desarrollado con node.js y con MySQL como base de datos, tiene integraciones con la API de mercado pago y posibilidad de hacer análisis del crecimiento de las ventas a través de gráficos proporcionados por Chart.js'
+            textPresen: `WeTrust es mi proyecto web más complejo hasta el momento, es un e-commerce simulado donde el frontend está desarrollado con React.js, haciendo manejo de sesiones, estado de un carrito, manejo de stock, entre otras muchas cosas.
+            El backend está desarrollado con node.js y con MySQL como base de datos, tiene integraciones con la API de mercado pago y posibilidad de hacer análisis del crecimiento de las ventas a través de gráficos proporcionados por Chart.js`
         },
         1: {
             name: 'MindfulMind',
@@ -96,7 +100,8 @@ const Project = ({ setTitlePage, changebyscrotum }) => {
             ],
             linkGithub: 'https://github.com/horacio-a/MindfulMind',
             linkWeb: 'https://mindfulmind.com.ar',
-            textPresen: 'MindfulMind es una aplicación enfocada en productividad, creada en React Native con Expo, con backend en node.js, el proyecto tiene una landing page desarrollada en Next.js, todo desarrollado enteramente por mí.'
+            textPresen: `MindfulMind es una aplicación multiplataforma enfocada en productividad, como aplicación móvil está desarrollada en React Native con Expo, y como aplicación web desarrollada en next.js,
+            para el funcionamiento la app usa como backend node.js, el proyecto también tiene una landing page desarrollada en Next.js donde podés descargar app o ir directamente a la app web.`
         }
     }
 
