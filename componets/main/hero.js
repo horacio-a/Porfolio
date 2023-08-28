@@ -10,15 +10,15 @@ const Hero = () => {
             <div className="Title1Main" name='inicio'>
                 <img alt=' ' src="/imagenes/main/back.png" className="imgBack" />
                 <div className="textoMain">
-                    <div className="textTitle1Small">Full Stack </div>
-                    <div className="textTitle1Big">Developer.</div>
+                    <div className="textTitle1Small">Desarrolador </div>
+                    <div className="textTitle1Big">Full Stack.</div>
                 </div>
             </div>
             <div className="InicioMovil">
                 <img alt=' ' src="/imagenes/main/MovilFondo.png" className="imgBack" />
                 <div className="textoMain">
-                    <div className="textTitle1Small">Full Stack </div>
-                    <div className="textTitle1Big">Developer.</div>
+                    <div className="textTitle1Small">Desarrolador </div>
+                    <div className="textTitle1Big">Full Stack.</div>
                 </div>
             </div>
 
