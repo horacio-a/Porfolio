@@ -33,9 +33,10 @@ const Hability = ({ setTitlePage, changebyscrotum }) => {
                         </div>
                         <div>
                             Estoy emocionado de trabajar en proyectos desafiantes y colaborar con otros desarrolladores para crear soluciones innovadoras y de alta calidad. ¡No dudes en contactarme si necesitas un programador con experiencia en estas tecnología
-
                         </div>
-
+                        <a href="/horacio albornoz cv español.pdf" download='horacio albornoz cv español.pdf' className="btnCv">
+                            Descargar mi CV
+                        </a>
                     </div>
                     <div className="HabilidadesBlocks">
                         <div className="rowMain">
