@@ -15,7 +15,8 @@ const MainFooter = ({ ScrolltoProyect, Scrolltohabilidades, ScrolltoContacto, se
                             <Waypoint
                                 onEnter={() => { changebyscrotum(4); setTitlePage('Horacio Albornoz') }} />
                             <div className="dataContact">Horaciomatiasalbornoz@gmail.com</div>
-                            <div className="dataContact">Horacio albornoz#0900 (discord)</div>
+                            <div className="dataContact">horacioalbornoz (Discord)</div>
+                            <a href="https://www.linkedin.com/in/horacio-albornoz-82606923a/" target="blank" className="dataContact">Horacio Albornoz (Linkedin)</a>
                         </div>
                         <div className="linksFooter">
                             <div onClick={() => { ScrolltoProyect() }} className='UnitLinksFooter'>Mis Proyectos</div>
