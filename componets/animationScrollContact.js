@@ -1,0 +1,93 @@
+const AnimationScrollContact = ({ animationNumContact }) => {
+    return (
+        <div className="AnimationScrollTitles" style={{ transform: `translateX(-${animationNumContact}%)` }}>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+            <div className="textAnimation">CONTACTO -<>&nbsp;</></div>
+            <div className="textAnimation">YHTEYSTIEDOT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTATTO -<>&nbsp;</></div>
+            <div className="textAnimation">KONTAKT -<>&nbsp;</></div>
+            <div className="textAnimation">CONTACT-<>&nbsp;</></div>
+        </div>
+    )
+}
+
+export default AnimationScrollContact
