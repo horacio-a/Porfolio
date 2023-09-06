@@ -21,7 +21,7 @@ export default function Custom404() {
                     </header>
                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
                         <div className="title404">NO DEBERIAS ESTAR AQUI</div>
-                        <a href="/" className="backBtn404">Volver</a>
+                        <Link href="/" className="backBtn404">Volver</Link>
                     </div>
 
                 </div>
