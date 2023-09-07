@@ -90,7 +90,6 @@ const Index = () => {
                         }}
                         onClick={() => {
                             if (!isMobile) {
-
                                 setProject(true)
                             } else {
                                 setProject(true)
@@ -122,19 +121,43 @@ const Index = () => {
 
                     <div className={`conteinerProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Open' : ''} ${Contact ? 'Desactive' : ''}`}>
                         <div className="titleProject"
-                            onMouseOver={aboutMe ? () => { clearInterval(storeIntervalaboutMe); } : onMouseOveraboutMe}
+                            onMouseOver={
+                                () => {
+                                    if (!isMobile) {
+                                        aboutMe ? () => { clearInterval(storeIntervalaboutMe); } : onMouseOveraboutMe()
+                                    }
+                                }
+                            }
                             onMouseOut={() => {
-                                if (animationNumaboutMe > 7500) setanimationNumaboutMe((animationNumaboutMe) => 0);
-                                clearInterval(storeIntervalaboutMe);
+                                if (!isMobile) {
+                                    if (animationNumaboutMe > 7500) setanimationNumaboutMe((animationNumaboutMe) => 0);
+                                    clearInterval(storeIntervalaboutMe);
+                                }
                             }}
-                            onClick={() => { setaboutMe(true) }}
+                            onClick={() => {
+                                if (!isMobile) {
+                                    setaboutMe(true)
+                                } else {
+                                    setaboutMe(true)
+                                    onMouseOveraboutMe()
+                                }
+                            }}
                         >
                             <AnimationScrollAboutMe animationNumaboutMe={animationNumaboutMe} />
                         </div>
                     </div>
                     <div className={`ProjectContent ${aboutMe ? 'Open' : ''}`}>
                         <div className="btnBack">
-                            <div className="TextBtnBack" onClick={() => { setaboutMe(false) }}>VOLVER</div>
+                            <div className="TextBtnBack"
+                                onClick={() => {
+                                    if (!isMobile) {
+                                        setaboutMe(false)
+                                    } else {
+                                        setaboutMe(false)
+                                        clearInterval(storeIntervalaboutMe);
+                                    }
+                                }}
+                            >VOLVER</div>
                         </div>
                         <AboutMeContent />
                     </div>
@@ -143,12 +166,28 @@ const Index = () => {
 
                     <div className={`conteinerProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Open' : ''}`}>
                         <div className="titleProject"
-                            onMouseOver={Contact ? () => { clearInterval(storeIntervalContact); } : onMouseOverContact}
+                            onMouseOver={
+                                () => {
+                                    if (!isMobile) {
+                                        Contact ? () => { clearInterval(storeIntervalContact); } : onMouseOverContact()
+                                    }
+                                }
+                            }
                             onMouseOut={() => {
-                                if (animationNumContact > 7500) setanimationNumContact((animationNumContact) => 0);
-                                clearInterval(storeIntervalContact);
+                                if (!isMobile) {
+                                    if (animationNumContact > 7500) setanimationNumContact((animationNumContact) => 0);
+                                    clearInterval(storeIntervalContact);
+                                }
                             }}
-                            onClick={() => { setContact(true) }}>
+                            onClick={() => {
+                                if (!isMobile) {
+                                    setContact(true)
+                                } else {
+                                    setContact(true)
+                                    onMouseOverContact()
+                                }
+                            }}
+                        >
                             <AnimationScrollContact animationNumContact={animationNumContact} />
                         </div>
                     </div>
