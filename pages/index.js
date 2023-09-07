@@ -193,7 +193,15 @@ const Index = () => {
                     </div>
                     <div className={`ProjectContent ${Contact ? 'Open' : ''}`}>
                         <div className="btnBack">
-                            <div className="TextBtnBack" onClick={() => { setContact(false) }}>VOLVER</div>
+                            <div className="TextBtnBack"
+                                onClick={() => {
+                                    if (!isMobile) {
+                                        setContact(false)
+                                    } else {
+                                        setContact(false)
+                                        clearInterval(storeIntervalContact);
+                                    }
+                                }}>VOLVER</div>
                         </div>
                         <ContactContent />
                     </div>
