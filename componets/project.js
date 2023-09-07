@@ -27,8 +27,8 @@ const ProjectContent = () => {
             ],
             linkGithub: 'https://github.com/horacio-a/WeTrust.git',
             linkWeb: 'https://wetrust.com.ar',
-            textPresen: `WeTrust es mi proyecto web más complejo hasta el momento, es un e-commerce simulado donde el frontend está desarrollado con React.js, haciendo manejo de sesiones, estado de un carrito, manejo de stock, entre otras muchas cosas.
-            El backend está desarrollado con node.js y con MySQL como base de datos, tiene integraciones con la API de mercado pago y posibilidad de hacer análisis del crecimiento de las ventas a través de gráficos proporcionados por Chart.js`
+            textPresen: `
+            WeTrust es mi proyecto web más avanzado hasta ahora, un e-commerce simulado que utiliza React.js en el frontend para gestionar sesiones, carritos, inventario y más. El backend se basa en node.js y MySQL, con integración de la API de Mercado Pago y capacidad para analizar el crecimiento de las ventas con gráficos de Chart.js.`
         },
         {
             name: 'NextChange',
