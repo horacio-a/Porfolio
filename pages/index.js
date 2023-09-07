@@ -89,7 +89,10 @@ const Index = () => {
                             }
                         }}
                         onClick={() => {
-                            !isMobile ? setProject(true) : () => {
+                            if (!isMobile) {
+
+                                setProject(true)
+                            } else {
                                 setProject(true)
                                 onMouseOverProject()
                             }
