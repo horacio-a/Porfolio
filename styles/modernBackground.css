@@ -389,8 +389,8 @@ body::-webkit-scrollbar-track {
     }
 
     .conteinerBuild .img {
-        width: 15%;
-        height: auto;
+        width: auto;
+        height: 50%;
 
     }
 
@@ -472,6 +472,7 @@ body::-webkit-scrollbar-track {
         height: 90%;
         width: 90%;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
@@ -484,7 +485,7 @@ body::-webkit-scrollbar-track {
 
     .conteinerHability {
         width: fit-content;
-        height: 85%;
+        height: 45%;
         position: relative;
 
     }
@@ -518,10 +519,10 @@ body::-webkit-scrollbar-track {
     }
 
     .conteinerInfo {
-        padding-left: 2.5%;
-        width: 32.5%;
-        height: 100%;
-        font-size: 1.95vh;
+        padding-top: 2.5%;
+        width: 85%;
+        height: 50%;
+        font-size: 1.5vmax;
         cursor: text;
         display: flex;
         align-items: center;
@@ -541,7 +542,7 @@ body::-webkit-scrollbar-track {
 
     .conteinerForm {
         margin-left: 5%;
-        width: 30%;
+        width: 65%;
         height: 80%;
         background-color: #fff;
         display: flex;
@@ -610,7 +611,7 @@ body::-webkit-scrollbar-track {
     }
 
     .fastContactConteiner {
-        width: 15%;
+        width: 35%;
         height: 80%;
         margin-left: 2.5%;
         display: flex;
@@ -628,6 +629,7 @@ body::-webkit-scrollbar-track {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
+        font-size: 2.5vmin;
     }
 
     .fastContact a {
