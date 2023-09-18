@@ -135,8 +135,8 @@ const ProjectContent = () => {
                                 <div className="Description">{item.textPresen}</div>
                             </div>
                             <div className="conteinerBtns">
-                                <a href={`${item.linkGithub}`} className="btn">GITHUB</a>
-                                <a href={`${item.linkWeb}`} className="btn">WEB</a>
+                                <a href={`${item.linkGithub}`} target='blank' className="btn">GITHUB</a>
+                                <a href={`${item.linkWeb}`} target='blank' className="btn">WEB</a>
                             </div>
                         </div>
                     )
