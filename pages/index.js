@@ -10,8 +10,6 @@ import ContactContent from "@/componets/contact";
 import { isMobile } from 'react-device-detect';
 
 const Index = () => {
-    console.log(isMobile)
-
     const [TitlePage, setTitlePage] = useState('Horacio Albornoz')
     const [scrollItem, setScrollItem] = useState(0)
 
