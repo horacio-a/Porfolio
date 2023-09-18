@@ -9,17 +9,16 @@ export default function Custom404() {
     return (
         <>
             <Head >
-                <link rel="icon" href="\imagenes\main\darkS.png" />
-
+                <link rel="icon" href="Logo.png" />
                 <meta name="description" content="Porfolio de horacio Albornoz" />
-                <title>Elegí un estilo</title>
+                <title>No debeiras estar aqui</title>
             </Head>
             <main className="modernBackground">
                 <div className="content">
                     <header className="modern" >
                         HORACIO
                     </header>
-                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: '93.5%', height: '100%' }}>
                         <div className="title404">NO DEBERIAS ESTAR AQUI</div>
                         <Link href="/" className="backBtn404">Volver</Link>
                     </div>
