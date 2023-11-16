@@ -8,6 +8,10 @@ import ProjectContent from "@/componets/project";
 import AboutMeContent from "@/componets/AboutMe";
 import ContactContent from "@/componets/contact";
 import { isMobile } from 'react-device-detect';
+import Main from "@/componets/movil/main";
+import Proyect from "@/componets/movil/proyect";
+import AboutMe from "@/componets/movil/aboutMe";
+import ContactMovil from "@/componets/movil/contact";
 
 const Index = () => {
     const [TitlePage, setTitlePage] = useState('Horacio Albornoz')
@@ -60,157 +64,169 @@ const Index = () => {
 
 
     return (
-        <main className="modernBackground">
+        <>
             <Head>
                 <link rel="icon" href="Logo.png" />
                 <meta name="description" content="Porfolio de horacio Albornoz" />
                 <title>{TitlePage}</title>
             </Head>
+            <main className="modernBackgroundPc">
 
-
-            <div className="content">
-                <header className="modern" style={Project ? { border: 'none' } : (aboutMe ? { border: 'none' } : (Contact ? { border: 'none' } : {}))}>
-                    HORACIO
-                </header>
-                <div className={`conteinerMainProject ${Project ? 'Open' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Desactive' : ''}`}>
-                    <div className={`conteinerProject ${Project ? 'Open' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Desactive' : ''}`}
-                        onMouseOver={
-                            () => {
-                                if (!isMobile) {
-                                    Project ? () => { clearInterval(storeIntervalProject); } : onMouseOverProject()
-                                }
-                            }}
-                        onMouseOut={() => {
-                            if (!isMobile) {
-                                if (animationNumProject > 7500) setanimationNumProject((animationNumProject) => 0);
-                                clearInterval(storeIntervalProject);
-                            }
-                        }}
-                        onClick={() => {
-                            if (!isMobile) {
-                                setProject(true)
-                            } else {
-                                setProject(true)
-                                onMouseOverProject()
-                            }
-                        }}
-                    >
-                        <div className="titleProject">
-                            <AnimationScrollProject animationNumProject={animationNumProject} />
-                        </div>
-                    </div>
-                    <div className={`ProjectContent ${Project ? 'Open' : ''}`}>
-                        <div className="btnBack">
-                            <div className="TextBtnBack" onClick={() => {
-                                if (!isMobile) {
-                                    setProject(false)
-                                } else {
-                                    setProject(false)
-                                    clearInterval(storeIntervalProject);
-                                }
-                            }}>VOLVER</div>
-                        </div>
-                        <ProjectContent />
-
-                    </div>
-                </div>
-
-                <div className={`conteinerMainProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Open' : ''} ${Contact ? 'Desactive' : ''}`}>
-
-                    <div className={`conteinerProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Open' : ''} ${Contact ? 'Desactive' : ''}`}>
-                        <div className="titleProject"
+                <div className="content">
+                    <header className="modern" style={Project ? { border: 'none' } : (aboutMe ? { border: 'none' } : (Contact ? { border: 'none' } : {}))}>
+                        HORACIO
+                    </header>
+                    <div className={`conteinerMainProject ${Project ? 'Open' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Desactive' : ''}`}>
+                        <div className={`conteinerProject ${Project ? 'Open' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Desactive' : ''}`}
                             onMouseOver={
                                 () => {
                                     if (!isMobile) {
-                                        aboutMe ? () => { clearInterval(storeIntervalaboutMe); } : onMouseOveraboutMe()
+                                        Project ? () => { clearInterval(storeIntervalProject); } : onMouseOverProject()
                                     }
-                                }
-                            }
+                                }}
                             onMouseOut={() => {
                                 if (!isMobile) {
-                                    if (animationNumaboutMe > 7500) setanimationNumaboutMe((animationNumaboutMe) => 0);
-                                    clearInterval(storeIntervalaboutMe);
+                                    if (animationNumProject > 7500) setanimationNumProject((animationNumProject) => 0);
+                                    clearInterval(storeIntervalProject);
                                 }
                             }}
                             onClick={() => {
                                 if (!isMobile) {
-                                    setaboutMe(true)
+                                    setProject(true)
                                 } else {
-                                    setaboutMe(true)
-                                    onMouseOveraboutMe()
+                                    setProject(true)
+                                    onMouseOverProject()
                                 }
                             }}
                         >
-                            <AnimationScrollAboutMe animationNumaboutMe={animationNumaboutMe} />
+                            <div className="titleProject">
+                                <AnimationScrollProject animationNumProject={animationNumProject} />
+                            </div>
+                        </div>
+                        <div className={`ProjectContent ${Project ? 'Open' : ''}`}>
+                            <div className="btnBack">
+                                <div className="TextBtnBack" onClick={() => {
+                                    if (!isMobile) {
+                                        setProject(false)
+                                    } else {
+                                        setProject(false)
+                                        clearInterval(storeIntervalProject);
+                                    }
+                                }}>VOLVER</div>
+                            </div>
+                            <ProjectContent />
+
                         </div>
                     </div>
-                    <div className={`ProjectContent ${aboutMe ? 'Open' : ''}`}>
-                        <div className="btnBack">
-                            <div className="TextBtnBack"
-                                onClick={() => {
+
+                    <div className={`conteinerMainProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Open' : ''} ${Contact ? 'Desactive' : ''}`}>
+
+                        <div className={`conteinerProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Open' : ''} ${Contact ? 'Desactive' : ''}`}>
+                            <div className="titleProject"
+                                onMouseOver={
+                                    () => {
+                                        if (!isMobile) {
+                                            aboutMe ? () => { clearInterval(storeIntervalaboutMe); } : onMouseOveraboutMe()
+                                        }
+                                    }
+                                }
+                                onMouseOut={() => {
                                     if (!isMobile) {
-                                        setaboutMe(false)
-                                    } else {
-                                        setaboutMe(false)
+                                        if (animationNumaboutMe > 7500) setanimationNumaboutMe((animationNumaboutMe) => 0);
                                         clearInterval(storeIntervalaboutMe);
                                     }
                                 }}
-                            >VOLVER</div>
-                        </div>
-                        <AboutMeContent />
-                    </div>
-                </div>
-                <div className={`conteinerMainProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Open' : ''}`}>
-
-                    <div className={`conteinerProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Open' : ''}`}>
-                        <div className="titleProject"
-                            onMouseOver={
-                                () => {
-                                    if (!isMobile) {
-                                        Contact ? () => { clearInterval(storeIntervalContact); } : onMouseOverContact()
-                                    }
-                                }
-                            }
-                            onMouseOut={() => {
-                                if (!isMobile) {
-                                    if (animationNumContact > 7500) setanimationNumContact((animationNumContact) => 0);
-                                    clearInterval(storeIntervalContact);
-                                }
-                            }}
-                            onClick={() => {
-                                if (!isMobile) {
-                                    setContact(true)
-                                } else {
-                                    setContact(true)
-                                    onMouseOverContact()
-                                }
-                            }}
-                        >
-                            <AnimationScrollContact animationNumContact={animationNumContact} />
-                        </div>
-                    </div>
-                    <div className={`ProjectContent ${Contact ? 'Open' : ''}`}>
-                        <div className="btnBack">
-                            <div className="TextBtnBack"
                                 onClick={() => {
                                     if (!isMobile) {
-                                        setContact(false)
+                                        setaboutMe(true)
                                     } else {
-                                        setContact(false)
+                                        setaboutMe(true)
+                                        onMouseOveraboutMe()
+                                    }
+                                }}
+                            >
+                                <AnimationScrollAboutMe animationNumaboutMe={animationNumaboutMe} />
+                            </div>
+                        </div>
+                        <div className={`ProjectContent ${aboutMe ? 'Open' : ''}`}>
+                            <div className="btnBack">
+                                <div className="TextBtnBack"
+                                    onClick={() => {
+                                        if (!isMobile) {
+                                            setaboutMe(false)
+                                        } else {
+                                            setaboutMe(false)
+                                            clearInterval(storeIntervalaboutMe);
+                                        }
+                                    }}
+                                >VOLVER</div>
+                            </div>
+                            <AboutMeContent />
+                        </div>
+                    </div>
+                    <div className={`conteinerMainProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Open' : ''}`}>
+
+                        <div className={`conteinerProject ${Project ? 'Desactive' : ''} ${aboutMe ? 'Desactive' : ''} ${Contact ? 'Open' : ''}`}>
+                            <div className="titleProject"
+                                onMouseOver={
+                                    () => {
+                                        if (!isMobile) {
+                                            Contact ? () => { clearInterval(storeIntervalContact); } : onMouseOverContact()
+                                        }
+                                    }
+                                }
+                                onMouseOut={() => {
+                                    if (!isMobile) {
+                                        if (animationNumContact > 7500) setanimationNumContact((animationNumContact) => 0);
                                         clearInterval(storeIntervalContact);
                                     }
-                                }}>VOLVER</div>
+                                }}
+                                onClick={() => {
+                                    if (!isMobile) {
+                                        setContact(true)
+                                    } else {
+                                        setContact(true)
+                                        onMouseOverContact()
+                                    }
+                                }}
+                            >
+                                <AnimationScrollContact animationNumContact={animationNumContact} />
+                            </div>
                         </div>
-                        <ContactContent />
+                        <div className={`ProjectContent ${Contact ? 'Open' : ''}`}>
+                            <div className="btnBack">
+                                <div className="TextBtnBack"
+                                    onClick={() => {
+                                        if (!isMobile) {
+                                            setContact(false)
+                                        } else {
+                                            setContact(false)
+                                            clearInterval(storeIntervalContact);
+                                        }
+                                    }}>VOLVER</div>
+                            </div>
+                            <ContactContent />
+                        </div>
                     </div>
+
                 </div>
+                <div className="AutoScrollAnimation">
+                    <AnimationScrollDev />
+                </div>
+            </main>
+            <main className="modernBackgroundMovil">
+                <header className="modern" >
+                    HORACIO
+                </header>
+                <Main />
+                <Proyect />
+                <AboutMe />
+                <ContactMovil />
 
-            </div>
-            <div className="AutoScrollAnimation">
-                <AnimationScrollDev />
-            </div>
-        </main>
 
+
+            </main>
+        </>
 
 
     )

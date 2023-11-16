@@ -1,4 +1,9 @@
-const ProjectContent = () => {
+import { useEffect, useState } from "react"
+import AnimationScrollProject from "../animationScrollProject"
+
+const Proyect = () => {
+    const [scrollPosition, setScrollPosition] = useState(0)
+    const [seeMore, setSeeMore] = useState(false)
     const dataProject = [
         {
             name: 'Le grand Patron',
@@ -65,7 +70,6 @@ const ProjectContent = () => {
             imgQty: '5',
             imgs: [
                 '/imagenes/eyes/js.png       ',
-                '/imagenes/space/socketio.png',
                 '/imagenes/space/nodejs.png  ',
             ],
             linkGithub: 'https://github.com/horacio-a/Chat-en-tiempo-real',
@@ -120,52 +124,70 @@ const ProjectContent = () => {
             textPresen: 'Proyecto dessarrollado como proyecto final para el Curso de Coderhouse de Python y Django, Con un Frontend y Backend desarrolado en django es una aplicacion que simula un ecommerce. ',
         },
     ]
+
+    useEffect(() => {
+        function handleScroll() {
+            setScrollPosition(window.scrollY * 0.2)
+        }
+
+        window.addEventListener("scroll", handleScroll);
+    }, [])
+
     return (
+        <>
 
-        <div className="ScrollProject" >
-            {
-                dataProject.map(item => {
-                    return (
-                        <div className="Project">
-                            <div className="conteinerName">
-                                <div className="Title">{item.name}</div>
-                                <img className="img" src={`${item.icon}`} />
-                                <div className="description">{item.type}</div>
-                            </div>
-                            <div className="conteinerBuild">
-                                <div className="Title">Construido con</div>
-                                <div className="ContinerImgs">
-                                    {item.imgs.map(img => {
-                                        return (
-                                            <img src={`${img}`} className="img"></img>
-                                        )
-                                    })}
+            <div className="titleProject">
+                <AnimationScrollProject animationNumProject={scrollPosition} />
+            </div>
+            <div className="ScrollProject" >
+                {
+                    dataProject.slice(0, seeMore ? dataProject.length : 2).map(item => {
+                        return (
+                            <div className="Project">
+                                <div className="conteinerName">
+                                    <div className="Title">{item.name}</div>
+                                    <img className="img" src={`${item.icon}`} />
+                                    <div className="description">{item.type}</div>
+                                </div>
+                                <div className="conteinerBuild">
+                                    <div className="Title">Construido con</div>
+                                    <div className="ContinerImgs">
+                                        {item.imgs.map(img => {
+                                            return (
+                                                <img src={`${img}`} className="img"></img>
+                                            )
+                                        })}
 
+                                    </div>
+                                </div>
+                                <div className="conteinerDecription">
+                                    <div className="Title">DESCRIPCION</div>
+                                    <div className="Description">{item.textPresen}</div>
+                                </div>
+                                <div className="conteinerBtns">
+                                    {
+                                        item.linkGithub === 'disable'
+                                            ? <a className="btn disable">GITHUB</a>
+                                            : <a href={`${item.linkGithub}`} target='blank' className="btn">GITHUB</a>
+                                    }
+                                    <a href={`${item.linkWeb}`} target='blank' className="btn">WEB</a>
                                 </div>
                             </div>
-                            <div className="conteinerDecription">
-                                <div className="Title">DESCRIPCION</div>
-                                <div className="Description">{item.textPresen}</div>
-                            </div>
-                            <div className="conteinerBtns">
-                                {
-                                    item.linkGithub === 'disable'
-                                        ? <a className="btn disable">GITHUB</a>
-                                        : <a href={`${item.linkGithub}`} target='blank' className="btn">GITHUB</a>
-                                }
-                                <a href={`${item.linkWeb}`} target='blank' className="btn">WEB</a>
-                            </div>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+                <button className="btnSeeMore" onClick={() => {
+                    seeMore ? setSeeMore(false) : setSeeMore(true)
+                }}>{seeMore ? 'Ver menos' : 'Ver mas'}</button>
 
+            </div >
 
-        </div>
+        </>
 
     )
 
 }
 
 
-export default ProjectContent
+
+export default Proyect
