@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import React from "react";
 import AnimationScrollError from "@/componets/animaationScrollError";
 export default function Custom404() {
 
@@ -9,8 +8,6 @@ export default function Custom404() {
     return (
         <>
             <Head >
-                <link rel="icon" href="Logo.png" />
-                <meta name="description" content="Porfolio de horacio Albornoz" />
                 <title>No debeiras estar aqui</title>
             </Head>
             <main className="modernBackgroundPc">
