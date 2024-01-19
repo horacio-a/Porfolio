@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import Head from "next/head";
+import React, { useState } from "react";
 import AnimationScrollDev from "@/componets/animaationScrollDev";
 import AnimationScrollProject from "@/componets/animationScrollProject";
 import AnimationScrollAboutMe from "@/componets/animationScrollAboutMe";
@@ -14,8 +13,7 @@ import AboutMe from "@/componets/movil/aboutMe";
 import ContactMovil from "@/componets/movil/contact";
 
 const Index = () => {
-    const [TitlePage, setTitlePage] = useState('Horacio Albornoz')
-    const [scrollItem, setScrollItem] = useState(0)
+
 
     const [Project, setProject] = useState(false);
     const [animationNumProject, setanimationNumProject] = useState(0);
@@ -65,11 +63,7 @@ const Index = () => {
 
     return (
         <>
-            <Head>
-                <link rel="icon" href="Logo.png" />
-                <meta name="description" content="Porfolio de horacio Albornoz" />
-                <title>{TitlePage}</title>
-            </Head>
+
             <main className="modernBackgroundPc">
 
                 <div className="content">
