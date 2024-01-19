@@ -85,7 +85,7 @@ const ProjectContent = () => {
                 '/imagenes/eyes/js.png       ',
             ],
             linkGithub: 'https://github.com/horacio-a/calculadora-extencion',
-            linkWeb: '"https://chrome.google.com/webstore/detail/calculadora/bejdbiknjfcgcllbcfgamogcefnojoak?hl=es&authuser=0',
+            linkWeb: 'https://chrome.google.com/webstore/detail/calculadora/bejdbiknjfcgcllbcfgamogcefnojoak?hl=es&authuser=0',
             textPresen: `Util hub es una extensión de Google multifuncional que simplifica tus tareas diarias.
             Realiza cálculos matemáticos rápidos, controla el tiempo con un cronómetro preciso y descubre una variedad de herramientas útiles, desarollada con Javascript Vanila y publicada usando el developer dashboard de Google `,
         },
