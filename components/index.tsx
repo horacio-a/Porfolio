@@ -1,0 +1,9 @@
+export { default as Header } from "./header";
+export { default as HomePage } from "./Home";
+export { default as Scroll } from "./Scroll";
+export { default as Language } from "./Language";
+export { default as Project } from "./Project";
+export { default as Chip } from "./Chip";
+export { default as Carousel } from "./Carousel";
+export { default as Contact } from "./Contact";
+export { default as Me } from "./Me";
